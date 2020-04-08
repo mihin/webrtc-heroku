@@ -1,0 +1,18 @@
+{
+  "name": "nodejs-simple",
+  "version": "1.0.0",
+  "description": "Heroku based Webrtc video chat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webrtc"
+  ],
+  "author": "MP",
+  "license": "ISC",
+  "dependencies": {
+    "connect": "^3.7.0",
+    "serve-static": "^1.14.1"
+  }
+}
