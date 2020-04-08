@@ -24,7 +24,7 @@
     }
     .copy {
       position: fixed;
-      top: 10px;
+      top: 20px;
       left: 50%;
       transform: translateX(-50%);
       font-size: 16px;
@@ -33,7 +33,12 @@
   </style>
 </head>
 <body>
-  <div class="copy">Send your URL to a friend to start a video call</div>
+  <div class="copy">Send your URL to a friend to start a video call
+    <div class="copy">Or enter URL here
+      <input type="text" id="input-url" />
+      <button id="button-join">Join conference</button>
+    </div>
+  </div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
   <script src="script.js"></script>
