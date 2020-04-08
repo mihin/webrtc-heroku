@@ -2,16 +2,21 @@
 if (!location.hash) {
   const hash = Math.floor(Math.random() * 0xFFFFFF).toString(16);
   location.hash = hash;
-  console.log("Session id = " + hash);
-  document.getElementById("input-url").value = hash;
+  //console.log("Session id = " + hash);
+  //document.getElementById("input-url").value = hash;
+  // document.getElementById("button-join").onclick = function() {
+  //   console.log("Redirecting to " + location.host + "/" + location.hash);
+  // };
 
-  document.getElementById("button-join").onclick = function() {
-    console.log("Redirecting to " + location.host + "/" + location.hash);
-  };
 
   window.top.postMessage('hash#' + hash, '*');
   console.log("iFrame message " + 'hash#' + hash);
 }
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  document.getElementById("new-url").innerText = location.host + "/" + location.hash;
+});
+
 const roomHash = location.hash.substring(1);
 
 // TODO: Replace with your own channel ID

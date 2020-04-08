@@ -30,14 +30,19 @@
       font-size: 16px;
       color: rgba(0, 0, 0, 0.5);
     }
+    .label {
+      font-size: 18px;
+      font-weight: bold;
+    }
   </style>
 </head>
 <body>
-  <div class="copy">Send your URL to a friend to start a video call
-    <div class="copy">Or enter URL here
+  <div class="copy">Send this URL to a friend to start a video call:&nbsp;
+    <!--div class="copy">Or enter URL here
       <input type="text" id="input-url" />
       <button id="button-join">Join conference</button>
-    </div>
+    </div-->
+    <span id="new-url" class="label">connecting...</span>
   </div>
   <video id="localVideo" autoplay muted></video>
   <video id="remoteVideo" autoplay></video>
