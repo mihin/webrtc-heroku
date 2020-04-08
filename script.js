@@ -14,7 +14,8 @@ if (!location.hash) {
 }
 
 document.addEventListener("DOMContentLoaded", function(event) { 
-  document.getElementById("new-url").innerText = location.host + "/" + location.hash;
+  var link = location.host.startsWith("http")?location.host:"https://" + location.host;
+  document.getElementById("new-url").innerText = link + "/" + location.hash;
 });
 
 const roomHash = location.hash.substring(1);
