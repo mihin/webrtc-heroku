@@ -9,6 +9,8 @@ if (!location.hash) {
     console.log("Redirecting to " + location.host + "/" + location.hash);
   };
 
+  window.top.postMessage('hash#' + hash, '*');
+  console.log("iFrame message " + 'hash#' + hash);
 }
 const roomHash = location.hash.substring(1);
 
