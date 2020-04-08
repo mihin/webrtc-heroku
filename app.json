@@ -1,0 +1,7 @@
+{
+  "name": "webrtc-heroku",
+  "description": "JS WebRTC video stream example",
+  "repository": "https://github.com/mihin/webrtc-heroku",
+  "logo": "https://raw.githubusercontent.com/renanpupin/nodejs-webrtc-video-stream/master/WebRTC_Logo.png",
+  "keywords": ["webrtc", "js", "video streaming"]
+}
